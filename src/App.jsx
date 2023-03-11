@@ -1,10 +1,15 @@
 import './App.css'
+// import BoxEnter from './components/BoxEnter'
+import BoxLevels from './components/BoxLevels'
+import Inbox from './components/inbox/Inbox'
 
 function App() {
 
   return (
     <div className="App">
-      <h1>Welcome to the Music Box</h1>
+      {/* <BoxEnter /> */}
+      {/* <BoxLevels /> */}
+      <Inbox />
     </div>
   )
 }
