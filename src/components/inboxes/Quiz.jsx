@@ -88,7 +88,7 @@ function Quiz({ state }) {
               Tiempo restante: {tiempoRestante}{" "}
             </span>
           ) : (
-            <>
+            <div className="tiempo-botones">
               <button
                 onClick={() => {
                   setTiempoRestante(10);
@@ -108,7 +108,7 @@ function Quiz({ state }) {
               }}>
                 Salir de la caja
               </button>
-            </>
+            </div>
           )}
         </div>
       </div>

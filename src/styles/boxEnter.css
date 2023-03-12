@@ -4,7 +4,7 @@
   height: 300px;
   position: relative;
   transform-style: preserve-3d;
-  transform: rotateX(-30deg) rotateY(330deg);
+  transform: rotateX(-30deg) rotateY(325deg);
   cursor: pointer;
 }
 
@@ -31,9 +31,11 @@
 }
 
 #box div span:nth-child(1) {
+  padding-top: 1.4rem;
   transform: rotateY(0deg) translate3d(0,0,150px);
 }
 #box div span:nth-child(2) {
+  padding-top: 2rem;
   transform: rotateY(90deg) translate3d(0,0,150px);
 }
 #box div span:nth-child(3) {
@@ -161,16 +163,17 @@
   top: 0;
   left: 0;
   background-image: url("../assets/spiral.png");
-  background-color: #dddddd56;
+  background-color: #d1d1d1b4;
   filter: drop-shadow(10px 10px 10px #000000);
-  box-shadow: 10px 10px 30px 0px var(--color-font2) ;
+  box-shadow: 10px 10px 30px 20px #000000 ;
   transform: rotateX(90deg) translate3d(0,0,-150px);
 }
 
 /* ------ Contenido externo de la caja */
 #box .box__title {
   font-size: 5rem;
-  text-shadow: 5px -5px 0 #4e4e4e6d;
+  text-shadow: 5px -5px 5px rgba(0, 0, 0, 0.427);
   font-family: var(--font-secondary);
+  color: #363636;
   user-select: none;
 }

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import logo from "../assets/logo.png"
 
 import React from "react";
 
@@ -35,7 +36,16 @@ const BoxEnter = ({ open }) => {
 			</div>
 			<div>
 				<span><h1 className="box__title">Music Box</h1></span>
-				<span></span>
+				<span className="box__logo">
+					<img 
+						src={logo} 
+						alt="logo"
+						className="logo"
+						style={{
+							filter: "drop-shadow(-10px -5px 5px rgba(0, 0, 0, 0.427))"
+						}}
+					/>
+				</span>
 				<span></span>
 				<span></span>
 			</div>

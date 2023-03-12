@@ -1,6 +1,7 @@
 
 /* ------ Importación de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
 
 /* ------ Estilos del documento */
 * {
@@ -10,12 +11,11 @@
 }
 
 body {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--color-font1);
-  background-color: #000000;
-  background-image: url("./assets/negro.png");
+  background-image: url("./assets/negro.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   overflow-x: hidden;
 }
 
@@ -32,12 +32,13 @@ body {
 :root {
   --font-primary: 'Orbitron', sans-serif;
   --font-secondary: 'Bebas Neue', cursiva;
+  --font-threeth: 'Bebas Neue', cursiva;
 
   --color-font1: #333;
   --color-font2: #111111;
 
   --color-box-primary: #d8aa77;
-  --color-box-secondary: #a0794f;
+  --color-box-secondary: #906c46;
 
   --color-box-locked-pri: #545250;
   --color-box-locked-sec: #4c4b49a7;

@@ -118,7 +118,7 @@ export const questions3 = [
     opciones: [
       { textoRespuesta: "Yellow", isCorrect: true },
       { textoRespuesta: "Viva la Vida", isCorrect: false },
-      { textoRespuesta: "Clocks", isCorrect: true },
+      { textoRespuesta: "Clocks", isCorrect: false },
       { textoRespuesta: "Spies", isCorrect: false },
     ],
   },
