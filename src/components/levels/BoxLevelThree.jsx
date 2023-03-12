@@ -1,10 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 
-const BoxLevelThree = () => {
-
-  const [enterLevel3, setEnterLevel3] = useState(false)
+const BoxLevelThree = ({ state }) => {
 
   const animateEnter = {
     transform: "rotateX(-70deg) rotateY(330deg)",
@@ -16,13 +13,11 @@ const BoxLevelThree = () => {
   return (
     <motion.div
 			id="boxlevel"
-			animate={enterLevel3 ? animateEnter : {}}
-			onClick={() => {
-				setEnterLevel3(!enterLevel3);
-			}}
+			animate={ state.enterLevel3.state ? animateEnter : {}}
+			onClick={ state.handleClick3 }
 		>
 			<div className="top"></div>
-			<div>
+			<div className={ state.enterLevel3.locked ? "box__locked" : ""}>
 				<span>
           <h2 className="leveltitle">2000</h2>
         </span>

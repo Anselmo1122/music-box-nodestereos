@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 
-const BoxLevelOne = ({ click }) => {
+const BoxLevelOne = ({ state }) => {
 
   const animateEnter = {
     transform: "rotateX(-70deg) rotateY(330deg)",
@@ -13,11 +13,11 @@ const BoxLevelOne = ({ click }) => {
   return (
     <motion.div
 			id="boxlevel"
-			animate={ click.enterLevel1 ? animateEnter : {} }
-			onClick={ click.handleClick }
+			animate={ state.enterLevel1.state ? animateEnter : {} }
+			onClick={ state.handleClick1 }
 		>
 			<div className="top"></div>
-			<div>
+			<div className={ state.enterLevel1.locked ? "box__locked" : ""}>
 				<span>
           <h2 className="leveltitle">1980</h2>
         </span>

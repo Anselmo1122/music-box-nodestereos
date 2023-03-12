@@ -1,7 +1,6 @@
 import './App.css'
 import BoxEnter from './components/BoxEnter'
 import BoxLevels from './components/BoxLevels'
-import InBox from './components/inboxes/InBox'
 
 import { useState } from 'react'
 

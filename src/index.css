@@ -12,7 +12,11 @@
 body {
   font-family: 'Orbitron', sans-serif;
   color: var(--color-font1);
-  background-image: url("./assets/pattern.webp");
+  background-color: #000000;
+  background-image: url("./assets/negro.png");
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -34,6 +38,9 @@ body {
 
   --color-box-primary: #d8aa77;
   --color-box-secondary: #a0794f;
+
+  --color-box-locked-pri: #545250;
+  --color-box-locked-sec: #4c4b49a7;
 }
 
 /* ------ Estilos base */
