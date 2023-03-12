@@ -47,3 +47,7 @@ Start the server
 ## Authors
 
 - [@Anselmo1122](https://github.com/Anselmo1122)
+
+- Pietro Sánchez: +58 426-4251362
+- Oscar Díaz: +58 426-4292053
+
