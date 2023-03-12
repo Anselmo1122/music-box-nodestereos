@@ -1,0 +1,176 @@
+/* ------ Estilos para la caja de inicio */
+#box {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(330deg);
+  cursor: pointer;
+}
+
+#box div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+}
+
+#box div span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid var(--color-font2);
+  background: linear-gradient(to bottom,var(--color-box-primary),var(--color-box-secondary));
+}
+
+#box div span:nth-child(1) {
+  transform: rotateY(0deg) translate3d(0,0,150px);
+}
+#box div span:nth-child(2) {
+  transform: rotateY(90deg) translate3d(0,0,150px);
+}
+#box div span:nth-child(3) {
+  transform: rotateY(180deg) translate3d(0,0,150px);
+}
+#box div span:nth-child(4) {
+  transform: rotateY(270deg) translate3d(0,0,150px);
+}
+
+
+/* ------ Tapa de la caja */
+#box .top {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid;
+  transform: rotateX(90deg) translate3d(0,0,150px);
+}
+
+#box .top-1,
+#box .top-2 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--color-box-primary);
+  border: 2px solid var(--color-font1);
+  box-shadow: inset 0px 0px 40px 0 #4a4a4a8d;
+}
+
+#box .top-1 {
+  left: 0;
+  transform: 
+    translate(-8px) 
+    translateZ(24px) 
+    scale(1) 
+    rotateY(-20deg);
+}
+#box .top-2 {
+  left: 50%;
+  transform: 
+    translate(8px) 
+    translateZ(24px) 
+    scale(1) 
+    rotateY(20deg);
+}
+#box .top-1.open {
+  animation: openbox-1 3s ease 0s 1 normal forwards;
+}
+#box .top-2.open {
+  animation: openbox-2 3s ease 0s 1 normal forwards;
+}
+
+/* Open Box - 1 - animation */
+@keyframes openbox-1 {
+  0% {
+    transform: 
+    translate(-8px) 
+    translateZ(24px) 
+    scale(1) 
+    rotateY(-20deg);
+  }
+  30% {
+    transform: 
+    translate(-102px) 
+    translateZ(75px) 
+    scale(1) 
+    rotateY(-112deg);
+  }
+  60% {
+    transform: 
+    translate(-114px) 
+    translateZ(67px) 
+    scale(1) 
+    rotateY(-122deg);
+  }
+  100% {
+    transform: 
+    translate(-126px) 
+    translateZ(55px) 
+    scale(1) 
+    rotateY(-132deg);
+  }
+}
+
+/* Open Box - 2 - animation */
+@keyframes openbox-2 {
+  0% {
+    transform: 
+    translate(8px) 
+    translateZ(24px) 
+    scale(1) 
+    rotateY(20deg);
+  }
+  30% {
+    transform: 
+    translate(102px) 
+    translateZ(75px) 
+    scale(1) 
+    rotateY(112deg);
+  }
+  60% {
+    transform: 
+    translate(114px) 
+    translateZ(67px) 
+    scale(1) 
+    rotateY(122deg);
+  }
+  100% {
+    transform: 
+    translate(126px) 
+    translateZ(55px) 
+    scale(1) 
+    rotateY(132deg);
+  }
+}
+
+/* ------ Base de la caja */
+#box .bottom {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../assets/spiral.png");
+  background-color: #dddddd56;
+  filter: drop-shadow(10px 10px 10px #000000);
+  box-shadow: 10px 10px 30px 0px var(--color-font2) ;
+  transform: rotateX(90deg) translate3d(0,0,-150px);
+}
+
+/* ------ Contenido externo de la caja */
+#box .box__title {
+  font-size: 5rem;
+  text-shadow: 5px -5px 0 #4e4e4e6d;
+  font-family: var(--font-secondary);
+  user-select: none;
+}

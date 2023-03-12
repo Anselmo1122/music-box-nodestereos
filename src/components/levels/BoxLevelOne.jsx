@@ -1,10 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 
-const BoxLevelOne = () => {
-
-  const [enterLevel1, setEnterLevel1] = useState(false)
+const BoxLevelOne = ({ click }) => {
 
   const animateEnter = {
     transform: "rotateX(-70deg) rotateY(330deg)",
@@ -16,10 +13,8 @@ const BoxLevelOne = () => {
   return (
     <motion.div
 			id="boxlevel"
-			animate={enterLevel1 ? animateEnter : {}}
-			onClick={() => {
-				setEnterLevel1(!enterLevel1);
-			}}
+			animate={ click.enterLevel1 ? animateEnter : {} }
+			onClick={ click.handleClick }
 		>
 			<div className="top"></div>
 			<div>
